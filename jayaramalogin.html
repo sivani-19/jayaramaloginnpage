@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> LOGIN</title>
+    <link rel="icon" type=".jpg/.png" href="./images/jayarama.png" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="loginform1">
+    <img src="./images/BG.png" >
+  </div>
+<div class="loginform">
+
+  <div class =imageview id="imageview">
+   <p class="quation">We value each <span class="property">property</span>  as if it were our own</p>
+   <img src="./images/b2.png">
+    <span class="background_shape1"></span>
+  </div>
+  <div class="Name">
+    <span class="background_shape2"></span>
+    <div class="Nameandpass">
+      <div class="logo" id="logo">
+        <img src="./images/jayaramlogo.png" alt="logo" />
+      </div>
+      
+       <p class="Login" id="Login">WELCOME</p>
+       <p class="passwordres" id="passwordres">Reset Password</p>
+      <div class="email Name" id="emailInput">
+        <i class="fa-solid fa-user" ></i>
+        <input type="email" placeholder="Email">
+      </div>
+      
+      <div class="password Name" id="passwordInput">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Password"  required>
+      </div>
+      <div class="email Name" id="Resetpassword">
+      <i class="fa-solid fa-user"></i>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="forgetPassword " id="forgetPassword">
+        <a href="#" onclick="showEmailInput()" >Forgot Password</a>
+      </div>
+      <div class="Submit Name" id="SIGNIN" >
+         <a href=""><i class="fa-solid fa-right-to-bracket"></i>SIGN IN</a>
+      </div>
+      <div class="Sendlink" id="Sendlink" >
+        <a href="">SEND LINK</a>
+     </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+<style>
+    
+body{position: relative;align-items:center;justify-content: center;color: rgb(6,143,202);overflow: hidden;width: 100%;
+ background-size:cover;position: absolute;top: 50%;left: 50%;transform: translate(-52%,-50%);}  
+ .loginform1 img{height: 200%;width: 102%; object-fit: cover; z-index: -2; position: absolute;filter: blur(6px);background-color: #ffffff;top:-30%;left:-5px;}
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Edu+SA+Beginner:wght@500;600&family=Varela+Round&display=swap');
+.loginform{display:grid;grid-template-columns: repeat(auto-fit,minmax(250px,2fr));background: linear-gradient( 90deg,#ffffff00 50%, #ffffff00 0%);width: 85%;
+  position: relative;left:9%;/*move the whitebox to left side*/
+  box-shadow:0px 0px 5px rgb(41, 39, 39);border-radius: 2px;border-radius: 20px;padding: 0px 0px 20px;z-index: 2;backdrop-filter: blur(8px); background-size:cover;
+   z-index: -1;}
+/* Add some margin to the left of the input elements to create space/// */
+input[type=Email],
+input[type=password] {width: 60%;margin: 3px 0;display: inline-block;border-bottom: 2px solid #627ff6;box-sizing: border-box;}	
+.imageview img{width:30vw;align-items: center;justify-content: center;left: 20%;position: relative;}
+.Name{text-align: center;align-items: center;justify-content: center;}
+.email,.password{display: flex;align-items:center;margin:15px 0px;/*gap b/w input and password*/left:-7px;position: relative;}
+#Resetpassword{display:none;}
+.email i,.password i{z-index: 2;border-radius: 1px;font-size: 3vh;left:6%;position: relative;}
+.logo img{position: relative;object-fit: cover;height: 40vh;align-items: center;justify-content: center;}
+input{border:none;padding:2vh 3vw;border-radius:12px;outline: none;font-size: 3vb;}
+
+.Name input:focus ~ label,
+.Name input:valid ~ label {color: #000000;font-size: 3vh;}
+.email input:focus,.password input:focus{border-color: rgb(0, 132, 255);box-shadow:0px 0px 5px rgb(41, 39, 39);}
+.Submit{position: relative;margin-top: 30px;}
+.Submit a{text-decoration: none;color: #ffffff;padding: 7px 45px;letter-spacing: 2px; position: relative;
+  background-color: rgba(6,143,202);cursor: pointer;transition: opacity 0.4s;border-radius: 20px;font-size: 3vh}
+.Sendlink{position:relative;}
+.Sendlink a{text-decoration: none;color: white;padding: 7px 30px; background-color: rgba(6,143,202);border-radius: 25px;}
+.Submit a:active,.Sendlink a:active{  background: rgb(8, 163, 194);box-shadow:0px 0px 5px #000000;}
+.quation{font-weight: bold;display: block;width:60%;font-size: 4vh;color: rgb(0, 0, 0);font-family: 'Varela Round', sans-serif;margin-left: 35px;margin-top:40px;position: relative;}
+.Login{font-size: 4vh;position: relative;color:rgb(255, 255, 255);margin-top: -20px;}
+.forgetPassword{justify-content: center;align-items: center;position: relative;margin-left: 150px;margin-top: -10px;font-size: 3vh}
+#forgetPassword a{ color:#ffffff;}
+
+#forgetPassword a:active{color: rgb(176, 97, 97);}
+#passwordres{text-transform: uppercase;color: rgb(255, 255, 255);text-align: center;display: none;justify-content: center;}
+::placeholder{color: #000000a2;font-size: 3vh;align-items: center;justify-content: center;}
+.property{color: rgb(255, 0, 0);}
+.Sendlink{display: none;}
+@media (max-width:800px) {
+  .loginform{flex-direction: column;}
+  .imageview{display: none;}
+  input[type=Email],
+		input[type=password] {
+			width: 100%;
+			padding: 12px 40px;
+			margin: 8px 0;
+			display: inline-block;
+			border-bottom: 2px solid #00c3ff;
+			box-sizing: border-box;
+		}
+}
+@media(max-width:468px){
+  .email i,.password i,#Resetpassword i{left:10%;}
+}
+
+
+
+
+</style>
+<script>
+
+    // Wrap the typewriter effect on page load
+  function showEmailInput() {
+      var emailInput = document.getElementById('emailInput'); 
+      var passwordInput = document.getElementById('passwordInput');
+      // Hide the password input
+      passwordInput.style.display = 'none';
+      // Show the email input
+      emailInput.style.display = 'none';
+      forgetPassword.style.display='none';
+      SIGNIN.style.display='none';
+      Login.style.display='none';
+      Resetpassword.style.display='flex';
+      Sendlink.style.display='block';
+      passwordres.style.display='block';
+     // JavaScript function to change the image position
+    // Get the image element by its ID
+    var resetpassword=document.getElementById('passwordres');
+    // Modify the image's CSS properties
+
+    resetpassword.style.textTransform='uppercase';
+  }
+  
+</script>
